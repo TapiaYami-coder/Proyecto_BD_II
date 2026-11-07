@@ -35,5 +35,31 @@ Desarrollar una aplicación web que permita gestionar y controlar proyectos de c
 - Encargado de obra.
 - Trabajador.
 - Proveedor.
+## Tecnologías y herramientas utilizadas
+
+### Frontend
+- HTML
+- CSS
+- JavaScript
+
+### Backend
+- Python
+
+### Base de datos
+- MySQL
+
+### Herramientas de desarrollo
+- Visual Studio Code
+- MySQL Workbench 8.0
+- Git y GitHub
+- Draw.io
+
+### Arquitectura
+El sistema utilizará Python para desarrollar
+la lógica del negocio, gestionar los usuarios y procesar
+las operaciones del sistema. MySQL será utilizado para
+almacenar la información mediante una base de datos
+relacional, mientras que HTML, CSS y JavaScript
+permitirán construir la interfaz web.
 
 
