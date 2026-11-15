@@ -1,0 +1,22 @@
+OBRA CONTROL - ARCHIVOS PHP
+
+1. Copia la carpeta OBRA_CONTROL_PHP dentro de:
+   C:\xampp\htdocs\
+
+2. En phpMyAdmin verifica que la base de datos se llame:
+   OBRA_CONTROL
+
+3. Verifica que MySQL esté usando el puerto 3308.
+   Si utilizas otro puerto, cambia $puerto en conexion.php.
+
+4. Coloca tu imagen de logo dentro de la carpeta img con el nombre:
+   logo.png
+
+5. Abre en el navegador:
+   http://localhost/OBRA_CONTROL_PHP/
+
+IMPORTANTE:
+- Cada página consulta una de las vistas creadas en MySQL.
+- Se utiliza SELECT * para mostrar las columnas de cada vista.
+- Este paquete permite consultar información; todavía no incluye
+  formularios para insertar, editar o eliminar registros.
