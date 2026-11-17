@@ -38,6 +38,7 @@ Desarrollar una aplicación web que permita gestionar y controlar proyectos de c
 ## Tecnologías y herramientas utilizadas
 
 ### Frontend
+- PHP
 - HTML
 - CSS
 - JavaScript
