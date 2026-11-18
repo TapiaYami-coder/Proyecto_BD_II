@@ -1,0 +1,642 @@
+body.fondo-acceso {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #eaf0f6, #f6f8fb);
+  font-family: "Segoe UI", Inter, Arial, sans-serif;
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.fondo-acceso *,
+.fondo-acceso *::before,
+.fondo-acceso *::after {
+  box-sizing: border-box;
+}
+
+.fondo-acceso .tarjeta-acceso {
+  width: min(100%, 1000px);
+  min-height: 620px;
+  background: var(--blanco);
+  border-radius: 22px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  box-shadow: var(--sombra-fuerte);
+}
+
+.fondo-acceso .panel-acceso {
+  background: linear-gradient(145deg, rgba(16, 43, 69, 0.94), rgba(27, 69, 102, 0.94)), url('../img/obra-login.jpg') center / cover, var(--azul-oscuro);
+  color: var(--blanco);
+  padding: 60px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.fondo-acceso .panel-acceso::after {
+  content: "";
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border: 35px solid rgba(255, 255, 255, 0.07);
+  border-radius: 50%;
+  right: -80px;
+  bottom: -70px;
+}
+
+.fondo-acceso .panel-acceso .marca {
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: var(--dorado);
+  font-size: 14px;
+  display: block;
+}
+
+.fondo-acceso .panel-acceso .titulo-marca {
+  font-size: 42px;
+  line-height: 1.12;
+  max-width: 380px;
+  margin: 18px 0 14px;
+}
+
+.fondo-acceso .panel-acceso p {
+  color: #d2dce6;
+  line-height: 1.7;
+  max-width: 360px;
+}
+
+.fondo-acceso .caja-acceso {
+  padding: 44px 52px;
+  align-self: center;
+  width: 100%;
+}
+
+.fondo-acceso .logo-redondo {
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  background: var(--dorado-claro);
+  color: var(--azul);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.fondo-acceso .caja-acceso .titulo-seccion {
+  margin: 22px 0 5px;
+  color: var(--azul);
+  font-size: 30px;
+}
+
+.fondo-acceso .texto-suave {
+  color: var(--texto-suave);
+  font-size: 14px;
+}
+
+.fondo-acceso .caja-acceso form {
+  display: grid;
+  gap: 9px;
+  margin-top: 25px;
+}
+
+.fondo-acceso .caja-acceso label {
+  font-size: 13px;
+  font-weight: 700;
+  color: #34495e;
+  margin-bottom: 0;
+}
+
+.fondo-acceso .caja-acceso input {
+  padding: 14px;
+  border: 1px solid #d9e0e7;
+  border-radius: 9px;
+  margin-bottom: 8px;
+  font-size: 15px;
+  width: 100%;
+}
+
+.fondo-acceso .boton-principal {
+  border: 0;
+  border-radius: 9px;
+  padding: 15px;
+  background: var(--azul-claro);
+  color: var(--blanco);
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+  width: 100%;
+  font-size: 15px;
+}
+
+.fondo-acceso .boton-principal:hover {
+  background: var(--azul-oscuro);
+}
+
+.fondo-acceso .accesos-rapidos {
+  border-top: 1px solid #e8edf2;
+  margin-top: 28px;
+  padding-top: 17px;
+}
+
+.fondo-acceso .accesos-rapidos .titulo-tarjeta {
+  font-size: 14px;
+  color: var(--azul);
+  margin-bottom: 4px;
+}
+
+.fondo-acceso .rejilla-accesos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.fondo-acceso .rejilla-accesos button {
+  padding: 11px 8px;
+  border: 1px solid #dce4eb;
+  background: #f7f9fb;
+  border-radius: 8px;
+  color: #28445c;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 700;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.fondo-acceso .rejilla-accesos button:hover {
+  background: #e9f0f6;
+  border-color: var(--dorado);
+}
+
+.fondo-acceso .enlace-registro {
+  margin-top: 17px;
+  text-align: center;
+  color: #718092;
+  font-size: 13px;
+}
+
+.fondo-acceso .enlace-registro a,
+.fondo-acceso .volver {
+  color: var(--azul-claro);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.fondo-acceso .volver {
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.fondo-acceso .diseno-registro {
+  width: min(100%, 1120px);
+  min-height: 650px;
+  background: var(--blanco);
+  border-radius: 22px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 0.78fr 1.22fr;
+  box-shadow: var(--sombra-fuerte);
+}
+
+.fondo-acceso .intro-registro {
+  padding: 48px;
+  background: linear-gradient(145deg, rgba(16, 43, 69, 0.9), rgba(27, 69, 102, 0.9)), url('../img/obra-registro.jpg') center / cover, var(--azul-claro);
+  color: var(--blanco);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fondo-acceso .intro-registro .titulo-marca {
+  font-size: 36px;
+  line-height: 1.1;
+  margin: 25px 0 12px;
+}
+
+.fondo-acceso .intro-registro p {
+  line-height: 1.7;
+  color: #dce6ee;
+}
+
+.fondo-acceso .formulario-registro {
+  padding: 38px 42px;
+  align-self: center;
+  width: 100%;
+}
+
+.fondo-acceso .formulario-registro .titulo-seccion {
+  font-size: 29px;
+  color: var(--azul);
+  margin: 20px 0 5px;
+}
+
+.fondo-acceso .formulario-registro form {
+  margin-top: 22px;
+}
+
+.fondo-acceso .rejilla-registro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 13px;
+}
+
+.fondo-acceso .campo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.fondo-acceso .campo label {
+  margin-bottom: 2px;
+}
+
+.fondo-acceso .campo input,
+.fondo-acceso .campo select {
+  width: 100%;
+}
+
+.fondo-acceso .subformulario {
+  display: none;
+  grid-column: 1 / -1;
+  background: #f5f8fb;
+  border: 1px solid #e3eaf0;
+  border-radius: 13px;
+  padding: 17px;
+}
+
+.fondo-acceso .subformulario .titulo-tarjeta {
+  color: var(--azul-claro);
+  margin-bottom: 13px;
+  font-size: 16px;
+}
+
+@media (max-width: 700px) {
+  .fondo-acceso .tarjeta-acceso {
+    grid-template-columns: 1fr;
+  }
+
+  .fondo-acceso .panel-acceso {
+    padding: 28px;
+    min-height: 190px;
+  }
+
+  .fondo-acceso .panel-acceso .titulo-marca {
+    font-size: 30px;
+    margin: 14px 0;
+  }
+
+  .fondo-acceso .caja-acceso {
+    padding: 30px;
+  }
+}
+
+@media (max-width: 760px) {
+  .fondo-acceso .diseno-registro {
+    grid-template-columns: 1fr;
+  }
+
+  .fondo-acceso .intro-registro {
+    padding: 25px;
+    min-height: 190px;
+  }
+
+  .fondo-acceso .intro-registro .titulo-marca {
+    font-size: 27px;
+    margin: 12px 0;
+  }
+
+  .fondo-acceso .formulario-registro {
+    padding: 25px;
+  }
+
+  .fondo-acceso .rejilla-registro {
+    grid-template-columns: 1fr;
+  }
+}
+
+.fondo-acceso .intro-pasos {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.fondo-acceso .paso-indicador {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.55);
+  transition: color 0.3s;
+}
+
+.fondo-acceso .paso-indicador.activo {
+  color: var(--dorado-claro);
+}
+
+.fondo-acceso .paso-numero {
+  width: 27px;
+  height: 27px;
+  border-radius: 50%;
+  border: 2px solid currentColor;
+  display: grid;
+  place-items: center;
+  font-size: 12px;
+}
+
+.fondo-acceso .paso-indicador.activo .paso-numero {
+  background: var(--dorado);
+  border-color: var(--dorado);
+  color: var(--azul);
+}
+
+.fondo-acceso .paso-linea {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.2);
+  max-width: 60px;
+}
+
+.fondo-acceso .barra-progreso {
+  height: 5px;
+  background: #edf2f7;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 8px 0 22px;
+}
+
+.fondo-acceso .barra-relleno {
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(90deg, var(--dorado), #f4d489);
+  border-radius: 10px;
+  transition: width 0.4s ease;
+}
+
+.fondo-acceso .paso {
+  display: none;
+  animation: entrada-paso 0.35s ease;
+}
+
+.fondo-acceso .paso.activo {
+  display: block;
+}
+
+@keyframes entrada-paso {
+  from { opacity: 0; transform: translateX(12px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.fondo-acceso .titulo-paso {
+  color: var(--azul);
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.fondo-acceso .campo-con-clave {
+  position: relative;
+}
+
+.fondo-acceso .campo-con-clave input {
+  padding-right: 65px;
+}
+
+.fondo-acceso .boton-ver-clave {
+  position: absolute;
+  right: 6px;
+  top: 6px;
+  bottom: 14px;
+  border: 0;
+  background: #edf2f7;
+  color: var(--azul-claro);
+  border-radius: 7px;
+  padding: 0 10px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.fondo-acceso .boton-ver-clave:hover {
+  background: #dfe8ef;
+}
+
+.fondo-acceso .medidor-fuerza {
+  margin-top: 8px;
+}
+
+.fondo-acceso .medidor-barras {
+  display: flex;
+  gap: 5px;
+}
+
+.fondo-acceso .medidor-barras span {
+  flex: 1;
+  height: 5px;
+  background: #e4eaf0;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.fondo-acceso .medidor-barras span.activa {
+  background: var(--dorado);
+}
+
+.fondo-acceso .fuerza-texto {
+  display: block;
+  margin-top: 6px;
+  color: #8a97a5;
+  font-size: 11px;
+}
+
+.fondo-acceso .fuerza-texto.nivel-1 { color: #c0504a; }
+.fondo-acceso .fuerza-texto.nivel-2 { color: #b1842d; }
+.fondo-acceso .fuerza-texto.nivel-3 { color: #3d7d63; }
+.fondo-acceso .fuerza-texto.nivel-4 { color: #21643b; font-weight: 700; }
+
+.fondo-acceso .mensaje-campo {
+  display: none;
+  color: #b3362f;
+  font-size: 11px;
+  margin-top: 4px;
+}
+
+.fondo-acceso .mensaje-campo.visible {
+  display: block;
+}
+
+.fondo-acceso .invalido {
+  border-color: #c0504a !important;
+  box-shadow: 0 0 0 3px rgba(192, 80, 74, 0.1) !important;
+}
+
+.fondo-acceso .tarjetas-rol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 16px 0 6px;
+}
+
+.fondo-acceso .tarjeta-rol {
+  border: 2px solid #e3eaf0;
+  border-radius: 13px;
+  padding: 16px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: border-color 0.2s, background 0.2s, transform 0.2s;
+  position: relative;
+}
+
+.fondo-acceso .tarjeta-rol:hover {
+  border-color: var(--dorado);
+  transform: translateY(-2px);
+}
+
+.fondo-acceso .tarjeta-rol.seleccionada {
+  border-color: var(--dorado);
+  background: #fffbf0;
+}
+
+.fondo-acceso .tarjeta-rol input {
+  position: absolute;
+  opacity: 0;
+  width: 1px;
+  height: 1px;
+}
+
+.fondo-acceso .icono-rol {
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #edf2f7;
+  color: var(--azul-claro);
+  display: grid;
+  place-items: center;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.fondo-acceso .tarjeta-rol.seleccionada .icono-rol {
+  background: var(--dorado);
+  color: var(--azul);
+}
+
+.fondo-acceso .tarjeta-rol strong {
+  color: var(--azul);
+  font-size: 14px;
+}
+
+.fondo-acceso .tarjeta-rol small {
+  color: var(--texto-suave);
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+.fondo-acceso .subformulario {
+  max-height: 0;
+  opacity: 0;
+  padding: 0 17px;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease, margin 0.3s ease;
+  margin: 0;
+}
+
+.fondo-acceso .subformulario.visible {
+  display: block;
+  max-height: 700px;
+  opacity: 1;
+  padding: 17px;
+  margin-top: 14px;
+}
+
+.fondo-acceso .nota-seguridad {
+  font-size: 11px;
+  color: #8a97a5;
+  text-align: center;
+  margin: 14px 0 6px;
+}
+
+.fondo-acceso .acciones-paso {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 18px;
+}
+
+.fondo-acceso .acciones-paso .boton-principal {
+  width: auto;
+  padding: 14px 22px;
+}
+
+.fondo-acceso .acciones-paso .boton-secundario {
+  padding: 14px 20px;
+}
+
+.fondo-acceso .panel-exito {
+  text-align: center;
+  padding: 50px 20px;
+  animation: entrada-paso 0.4s ease;
+}
+
+.fondo-acceso .icono-exito {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #e9f7ef;
+  color: #21643b;
+  font-size: 34px;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 18px;
+}
+
+.fondo-acceso .panel-exito .titulo-tarjeta {
+  color: var(--azul);
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.fondo-acceso .panel-exito p {
+  color: var(--texto-suave);
+  margin-bottom: 22px;
+}
+
+.fondo-acceso .panel-exito .boton-principal {
+  width: auto;
+  padding: 14px 26px;
+}
+
+.fondo-acceso .animar-entrada {
+  animation: entrada-paso 0.4s ease;
+}
+
+@media (max-width: 760px) {
+  .fondo-acceso .tarjetas-rol {
+    grid-template-columns: 1fr;
+  }
+
+  .fondo-acceso .acciones-paso {
+    flex-direction: column-reverse;
+  }
+
+  .fondo-acceso .acciones-paso .boton-principal,
+  .fondo-acceso .acciones-paso .boton-secundario {
+    width: 100%;
+  }
+}
+
+.panel-lateral {
+    background-image: url("../img/obra-login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
